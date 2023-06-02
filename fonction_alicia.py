@@ -49,7 +49,6 @@ def get_top_n_trigram(corpus, n=None):
 
 def stop_word_fortext(text):
     import nltk
-    nltk.download('punkt')
     stop_words = set(stopwords.words('english'))
     word_tokens = word_tokenize(text)
     # converts the words in word_tokens to lower case and then checks whether 
